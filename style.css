@@ -1,0 +1,58 @@
+html, body {
+    height: 100%; /* Ensure full height for both html and body */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any scrollbars */
+}
+
+body {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images2/Clock-wide-wallpaper.jpg);
+    background-size: cover; /* Ensure the background image covers the whole screen */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Avoid repetition of the background image */
+    background-attachment: fixed; /* Optional: Make the background image fixed during scrolling */
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(1.8em, 8vw, 3.5em);
+    position: relative;
+    -webkit-text-stroke: 3px #be8d6b;
+    color: transparent;
+    line-height: 1;
+    margin-top: 2.5em;
+    margin-left: 0.5em;
+}
+
+h1::before {
+    content: "DIGITAL CLOCK";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: #d8a17a;
+    border-right: 8px solid #d8a17a;
+    transition: 1s ease-in-out;
+}
+
+h1:hover::before {
+    width: 99%;
+    filter: drop-shadow(0 0 1px #d8a17a);
+}
+
+h1:hover {
+    color: #d8a17a;
+    cursor: pointer;
+}
+
+.clock {
+    cursor: pointer;
+    line-height: 0%;
+    font-size: clamp(1.8em, 8vw, 3.5em);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1em;
+    color: transparent;
+    top: -1.3em;
+    -webkit-text-stroke: 3px #be8d6b;
+}
