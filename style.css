@@ -1,17 +1,17 @@
 html, body {
-    height: 100%; /* Ensure full height for both html and body */
+    height: 100%; 
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent any scrollbars */
+    overflow: hidden;
 }
 
 body {
     background-image: url(https://www.pixelstalk.net/wp-content/uploads/images2/Clock-wide-wallpaper.jpg);
-    background-size: cover; /* Ensure the background image covers the whole screen */
-    background-position: center;  /* Center the image */
-    background-repeat: no-repeat; /* Avoid repetition of the background image */
-    background-attachment: fixed; /* Optional: Make the background image fixed during scrolling */
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 h1 {
